@@ -10,7 +10,15 @@ namespace csharp_course
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("andrew");
+            int A = 0; int B = 5; int C = 2;
+            if (A < B && B < C)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
         }
     }
 }

@@ -11,13 +11,16 @@ namespace csharp_course
         static void Main(string[] args)
         {
             int A = 0; int B = 5; int C = 2;
-            if (A < B && B < C)
+            if (A < B && A < C)
             {
-                Console.WriteLine("True");
+                Console.WriteLine(A);
             }
-            else
+            else if (B < A && B < C)
             {
-                Console.WriteLine("False");
+                Console.WriteLine(B);
+            }
+            {
+                Console.WriteLine(C);
             }
         }
     }

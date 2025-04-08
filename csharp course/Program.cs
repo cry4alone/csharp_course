@@ -10,7 +10,11 @@ namespace csharp_course
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("andrew");
+            int num = 567;
+            int ones = num % 10;
+            int two = num % 100 / 10;
+            Console.WriteLine("Единицы:"+ ones);
+            Console.WriteLine("Десятки:"+two);
         }
     }
 }

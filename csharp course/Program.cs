@@ -10,7 +10,9 @@ namespace csharp_course
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("andrew");
+            float a = 10;
+            float P = 4 * a;
+            Console.WriteLine(P);
         }
     }
 }

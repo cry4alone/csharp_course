@@ -10,15 +10,15 @@ namespace csharp_course
     {
         static void Main(string[] args)
         {
-            int A = 0; int B = 5; int C = 2;
-            if (A < B && B < C)
+            int num = 1000;
+            int endNum = 1100;
+            int percent = Int32.Parse(Console.ReadLine());
+            // 5 %
+            while (num <= endNum)
             {
-                Console.WriteLine("True");
+                num += percent * (num / 100);
             }
-            else
-            {
-                Console.WriteLine("False");
-            }
+            Console.WriteLine(num);
         }
     }
 }

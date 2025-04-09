@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp course", "csharp course\csharp course.csproj", "{3FA55035-3AED-4DFD-81BD-822F92CC0E7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp courseTests4", "csharp courseTests4\csharp courseTests4.csproj", "{E19B9E54-E1E1-44B6-874E-C4DD74A89814}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3FA55035-3AED-4DFD-81BD-822F92CC0E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FA55035-3AED-4DFD-81BD-822F92CC0E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FA55035-3AED-4DFD-81BD-822F92CC0E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E19B9E54-E1E1-44B6-874E-C4DD74A89814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E19B9E54-E1E1-44B6-874E-C4DD74A89814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E19B9E54-E1E1-44B6-874E-C4DD74A89814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E19B9E54-E1E1-44B6-874E-C4DD74A89814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

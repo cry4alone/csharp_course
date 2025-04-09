@@ -1,46 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace csharp_course
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            int numA = Int32.Parse(a);
+            Console.WriteLine("Введите номер дня недели (1-7):");
+            string input = Console.ReadLine();
 
-            switch (numA)
+            if (int.TryParse(input, out int numA))
+            {
+                string weekday = GetWeekday(numA);
+                Console.WriteLine(weekday);
+            }
+        }
+
+        public static string GetWeekday(int num)
+        {
+            switch (num)
             {
                 case 1:
-                    Console.WriteLine("Понедельник");
-                    break;
+                    return "Понедельник";
                 case 2:
-                    Console.WriteLine("Вторник");
-                    break;
+                    return "Вторник";
                 case 3:
-                    Console.WriteLine("Среда");
-                    break;
+                    return "Среда";
                 case 4:
-                    Console.WriteLine("Четверг");
-                    break;
+                    return "Четверг";
                 case 5:
-                    Console.WriteLine("Пятница");
-                    break;
+                    return "Пятница";
                 case 6:
-                    Console.WriteLine("Суббота");
-                    break;
+                    return "Суббота";
                 case 7:
-                    Console.WriteLine("Воскресенье");
-                    break;
+                    return "Воскресенье";
                 default:
-                    Console.WriteLine("Нет такого дня");
-                    break;
+                    return "Нет такого дня";
             }
-
         }
     }
 }

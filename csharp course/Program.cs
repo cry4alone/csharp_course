@@ -10,15 +10,20 @@ namespace csharp_course
     {
         static void Main(string[] args)
         {
-            int A = 0; int B = 5; int C = 2;
-            if (A < B && B < C)
-            {
-                Console.WriteLine("True");
+            int Sign(float X) {
+                if (X == 0)
+                {
+                    return 0;
+                }
+                else if (X > 0) {
+                    return 1;
+                }
+                return -1;
             }
-            else
-            {
-                Console.WriteLine("False");
-            }
+
+            float A = 3;
+            float B = 5;
+            Console.WriteLine(Sign(A) + Sign(B));
         }
     }
 }

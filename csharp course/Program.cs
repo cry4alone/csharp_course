@@ -1,20 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace csharp_course
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int num = 567;
+            int[] res = GetNums(num);
+            Console.WriteLine($"Ones: {res[0]}, Tens: {res[1]}");
+        }
+
+        public static int[] GetNums(int num)
+        {
             int ones = num % 10;
-            int two = num % 100 / 10;
-            Console.WriteLine("Единицы:"+ ones);
-            Console.WriteLine("Десятки:"+two);
+            int tens = (num / 10) % 10;
+            return new int[] { ones, tens };
         }
     }
 }
